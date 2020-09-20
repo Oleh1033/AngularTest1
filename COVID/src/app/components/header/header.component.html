@@ -9,9 +9,22 @@
             <li>Колір коліс: <strong>{{colors.wheels}}</strong></li>
         </ul>
     </div>
+
+    <h5>Можливості автомобіля</h5>
+    <form (submit)="addOpt(option.value)">
+        <div class="form-group">
+            <label for="option">Додати нову можливість</label>
+            <input type="text" id="option" placeholder="Введіть щось" class="form-control" #option>
+            <br>
+            <button type="submit" class="btn btn-outline-success">Додати</button>
+        </div>
+    </form>
+
     <div class="alert alert-warning">
         <ul>
-            <li *ngFor='let opt of options'>{{opt}}</li>
+            <li *ngFor="let opt of options">
+                {{opt}} <button class="btn btn-warning btn-sm" (click)="deleteOpt(opt)">x</button>
+            </li>
         </ul>
     </div>
 

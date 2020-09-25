@@ -1,4 +1,9 @@
 <div class="container">
     <app-data-transfer [userName]="name" [userAge]="age"></app-data-transfer>
     <input type="text" [(ngModel)]="name">
+
+    <hr>
+    <h6>Передавання події для її подальшої обробки батьківському компоненту від дочірнього компонента</h6>
+    <p>Кількість кліків: {{clicks}}</p>
+    <app-data-transfer2 (btnChanged)="btnChanged($event)"></app-data-transfer2>
 </div>

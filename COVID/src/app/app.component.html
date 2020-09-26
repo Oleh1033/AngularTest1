@@ -6,4 +6,9 @@
     <h6>Передавання події для її подальшої обробки батьківському компоненту від дочірнього компонента</h6>
     <p>Кількість кліків: {{clicks}}</p>
     <app-data-transfer2 (btnChanged)="btnChanged($event)"></app-data-transfer2>
+
+    <hr>
+    <h6>Двохстороння прив'язка між властивостями батьківського і дочірнього компонентів</h6>
+    <app-data-transfer3 [(userName)]="name1"></app-data-transfer3>
+    <p>Вибране ім'я: {{name1}}</p>
 </div>

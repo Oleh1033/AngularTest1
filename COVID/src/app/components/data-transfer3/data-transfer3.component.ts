@@ -7,6 +7,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class DataTransfer3Component implements OnInit {
 
+  constructor(){}
+
   @Input() userName: string;
   @Output() userNameChange = new EventEmitter<string>();
   
@@ -15,9 +17,6 @@ export class DataTransfer3Component implements OnInit {
     this.userNameChange.emit(model);
   }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+ ngOnInit(){}
 
 }

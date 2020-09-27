@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DataTransferComponent } from './components/data-transfer/data-transfer.component';
 import { DataTransfer2Component } from './components/data-transfer2/data-transfer2.component';
 import { DataTransfer3Component } from './components/data-transfer3/data-transfer3.component';
+import { DataTransfer4Component } from './components/data-transfer4/data-transfer4.component';
 
 
 
@@ -16,6 +17,7 @@ import { DataTransfer3Component } from './components/data-transfer3/data-transfe
     DataTransferComponent,
     DataTransfer2Component,
     DataTransfer3Component,
+    DataTransfer4Component,
   ],
   imports: [
     BrowserModule,

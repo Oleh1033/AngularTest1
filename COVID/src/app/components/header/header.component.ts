@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   model: string;
   colors: Colors;
   options: string[];
+  isEdit: boolean = false;
 
   constructor() { }
 
@@ -25,6 +26,10 @@ export class HeaderComponent implements OnInit {
       wheels: 'срібний'
     };
     this.options = ['ABS', 'Автопілот', 'Авто паркінг'];
+  }
+
+  toEdit(){
+    this.isEdit = !this.isEdit;
   }
 
   addOpt(option){

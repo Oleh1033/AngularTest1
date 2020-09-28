@@ -10,6 +10,25 @@
         </ul>
     </div>
 
+    <button type="button" (click)="toEdit()" class=" btn btn-danger">Редагувати</button>
+
+    <form *ngIf=isEdit>
+        <div class="form-group">
+            <input type="text" placeholder="Назва машини" class="form-control" [(ngModel)]="name" name="name">
+            <br>
+            <input type="text" placeholder="Модель машини" class="form-control" [(ngModel)]="model" name="model">
+            <br>
+            <input type="text" placeholder="Швидкість" class="form-control" [(ngModel)]="speed" name="speed">
+            <br>
+            <input type="text" placeholder="Колір машини" class="form-control" [(ngModel)]="colors.car" name="car">
+            <br>
+            <input type="text" placeholder="Колір салону" class="form-control" [(ngModel)]="colors.salon" name="salon">
+            <br>
+            <input type="text" placeholder="Колір коліс" class="form-control" [(ngModel)]="colors.wheels" name="wheels">
+            <br>
+        </div>
+    </form>
+
     <h5>Можливості автомобіля</h5>
     <form (submit)="addOpt(option.value)">
         <div class="form-group">

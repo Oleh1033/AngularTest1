@@ -1,4 +1,6 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
+import { DataTransfer6Component } from './components/data-transfer6/data-transfer6.component';
+/* import { DataTransfer6Component } from './components/data-transfer6.component' */
 
 @Component({
   selector: 'app-root',
@@ -30,5 +32,11 @@ export class AppComponent implements OnChanges {
     console.log(`${propName}: currentValue = ${currentValue}, previousValue = ${prevValue}`)
   }
  }
+
+@ViewChild(DataTransfer6Component, {static: false})
+private counterComponent: DataTransfer6Component;
+
+increment(){ this.counterComponent.increment(); }
+decrement(){ this.counterComponent.decrement(); }
 
 }

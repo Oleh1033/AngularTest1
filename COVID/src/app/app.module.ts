@@ -8,6 +8,8 @@ import { DataTransferComponent } from './components/data-transfer/data-transfer.
 import { DataTransfer2Component } from './components/data-transfer2/data-transfer2.component';
 import { DataTransfer3Component } from './components/data-transfer3/data-transfer3.component';
 import { DataTransfer4Component } from './components/data-transfer4/data-transfer4.component';
+import { DataTransfer5Component } from './components/data-transfer5/data-transfer5.component';
+import { DataTransfer6Component } from './components/data-transfer6/data-transfer6.component';
 
 
 
@@ -18,6 +20,8 @@ import { DataTransfer4Component } from './components/data-transfer4/data-transfe
     DataTransfer2Component,
     DataTransfer3Component,
     DataTransfer4Component,
+    DataTransfer5Component,
+    DataTransfer6Component,
   ],
   imports: [
     BrowserModule,

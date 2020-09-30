@@ -16,4 +16,20 @@
     <h6>Життєвий цикл компонента: ngOnChanges</h6>
     <app-data-transfer4 [nameChanged]="name2"></app-data-transfer4>
     <input type="text" [(ngModel)]="name2">
+
+    <hr>
+    <h6>Шаблонні змінні</h6>
+    <p #greeting>Hello, {{name}}</p>
+    <p>{{greeting.textContent.toUpperCase()}}</p>
+    <input type="text" [(ngModel)]="name">
+    <app-data-transfer5 #counter></app-data-transfer5>
+    <button (click)="counter.increment()">+</button>
+    <button (click)="counter.decrement()">-</button>
+
+    <hr>
+    <h6>ViewChild</h6>
+    <app-data-transfer6></app-data-transfer6>
+    <button (click)="increment()">+</button>
+    <button (click)="decrement()">-</button>
+
 </div>

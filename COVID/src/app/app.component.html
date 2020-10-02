@@ -32,4 +32,17 @@
     <button (click)="increment()">+</button>
     <button (click)="decrement()">-</button>
 
+    <hr>
+    <p>Привязка ViewChild до шаблонних змінних</p>
+    <p #nameText>{{name}}</p>
+    <p>{{nameText.textContent}}</p>
+    <button (click)="change()">Змінити</button>
+
+    <hr>
+    <p>ContentChild</p>
+    <app-data-transfer7>
+        <h3 #headerContent>Ласкаво просимо, {{name}}!</h3>
+    </app-data-transfer7>
+
+
 </div>

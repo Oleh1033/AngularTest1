@@ -1,6 +1,5 @@
-import { Component, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
 import { DataTransfer6Component } from './components/data-transfer6/data-transfer6.component';
-/* import { DataTransfer6Component } from './components/data-transfer6.component' */
 
 @Component({
   selector: 'app-root',
@@ -38,5 +37,14 @@ private counterComponent: DataTransfer6Component;
 
 increment(){ this.counterComponent.increment(); }
 decrement(){ this.counterComponent.decrement(); }
+
+@ViewChild("nameText", {static: false})
+nameParagraph: ElementRef;
+
+change(){
+  console.log(this.nameParagraph)
+  console.log(this.nameParagraph.nativeElement.textContent);
+  this.nameParagraph.nativeElement.textContent = "Oleh";
+}
 
 }

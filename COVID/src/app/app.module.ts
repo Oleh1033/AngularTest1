@@ -10,6 +10,7 @@ import { DataTransfer3Component } from './components/data-transfer3/data-transfe
 import { DataTransfer4Component } from './components/data-transfer4/data-transfer4.component';
 import { DataTransfer5Component } from './components/data-transfer5/data-transfer5.component';
 import { DataTransfer6Component } from './components/data-transfer6/data-transfer6.component';
+import { DataTransfer7Component } from './components/data-transfer7/data-transfer7.component';
 
 
 
@@ -22,6 +23,7 @@ import { DataTransfer6Component } from './components/data-transfer6/data-transfe
     DataTransfer4Component,
     DataTransfer5Component,
     DataTransfer6Component,
+    DataTransfer7Component,
   ],
   imports: [
     BrowserModule,

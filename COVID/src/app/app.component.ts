@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
+import { LogoService } from './logo.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [DataService]
+  providers: [DataService, LogoService]
 })
 export class AppComponent implements OnInit {
 

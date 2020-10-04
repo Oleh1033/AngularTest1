@@ -1,1 +1,13 @@
-<app-header></app-header>
+<div class="container">
+    <div class="addNames">
+        <input type="text" [(ngModel)]="name" placeholder="Модель">
+        <button (click)="addItem(name)">Додати</button>
+    </div>
+    <div class="table">
+        <table>
+            <tr *ngFor="let item of items">
+                <td>{{item}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

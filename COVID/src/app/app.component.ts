@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from './user'
 import { HttpService } from './http.service'
-import { HttpClient } from '@angular/common/http'
+
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,10 @@ import { HttpClient } from '@angular/common/http'
 })
 export class AppComponent implements OnInit{
  
-user: User;
+users: User[] = [];
 constructor(private httpService: HttpService){}
 
 ngOnInit(){
-  this.httpService.getData().subscribe((data: User) => this.user=data)
+  this.httpService.getData().subscribe((data) => this.users=data["usersList"]);
 }
 }

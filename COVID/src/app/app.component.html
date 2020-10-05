@@ -1,4 +1,8 @@
 <div class="container">
-    <p>Ім'я користувача: {{ user?.name }}</p>
-    <p>Вік користувача: {{ user?.age }}</p>
+    <ul>
+        <li *ngFor="let user of users">
+            <p>Ім'я користувача: {{ user?.name }}</p>
+            <p>Вік користувача: {{ user?.age }}</p>
+        </li>
+    </ul>
 </div>

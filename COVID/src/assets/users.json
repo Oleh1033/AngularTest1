@@ -1,0 +1,7 @@
+{
+    "usersList": [
+        { "name": "Bob", "age": 28 },
+        { "name": "Oleh", "age": 27 },
+        { "name": "Lili", "age": 24 }
+    ]
+}

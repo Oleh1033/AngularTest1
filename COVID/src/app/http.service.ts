@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 export class HttpService {
     constructor(private http: HttpClient){}
 
-    getUsers() : Observable<User[]> {
+    getUsers() : Observable<User[]> {                            //Object Observable. Get requst to users.json
      return this.http.get('assets/users.json').pipe(
          map(data => {
              let userList = data["usersList"];

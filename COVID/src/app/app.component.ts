@@ -15,6 +15,6 @@ users: User[] = [];
 constructor(private httpService: HttpService){}
 
 ngOnInit(){
-  this.httpService.getData().subscribe((data) => this.users=data["usersList"]);
+  this.httpService.getUsers().subscribe(data => this.users=data);
 }
 }

@@ -24,27 +24,44 @@ ngOnInit(){
 
 
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpService } from './http.service';
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  providers: [HttpService]
 })
 export class AppComponent{
    
   userName: string = "";
   response: any;
+  id: number;
+  book: any;
+  title: string;
 
-constructor(private http: HttpClient){}     
+constructor(private httpService: HttpService){}     
 
-
-search(){
-  this.http.get(' https://api.github.com/users/' + this.userName)
-  .subscribe((response) => {
-    this.response = response;
+search1(){
+  this.httpService.search(this.userName).subscribe((data:any) => {
+    this.response = data;
     console.log(this.response);
+  })
+}
+
+
+ getBook1(){
+  this.httpService.getBook(this.id).subscribe((data: any) => {
+    this.book = data;
+    console.log(this.book);
+  })
+} 
+
+createBook1(){
+  this.httpService.createBook(this.title).subscribe((data: any) => {
+    this.book = data;
+    console.log(this.book);
   })
 }
 

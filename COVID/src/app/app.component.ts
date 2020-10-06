@@ -15,9 +15,9 @@ constructor(private usersService: UsersService){}
 
 ngOnInit(){
   //this.users = this.usersService.users;
-  this.usersService.getUsers().subscribe(users => {
-    console.log(users)
-  } )
+   this.usersService.getUsers().subscribe(users => {
+    this.users = users;
+  } ) 
   
 }
 

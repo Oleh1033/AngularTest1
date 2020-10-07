@@ -10,6 +10,11 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   @Input() user;
+  isMarked = false;
+
+  onClick() {
+    this.isMarked = true;
+  }
 
   ngOnInit(): void {
   }

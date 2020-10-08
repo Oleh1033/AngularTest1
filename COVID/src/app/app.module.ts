@@ -4,13 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import {ZoomDirective} from './zoom.directives';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    ZoomDirective
   ],
   imports: [
     BrowserModule,

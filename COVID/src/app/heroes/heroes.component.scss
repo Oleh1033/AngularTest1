@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.container {
+    padding: 20px;
+    .heroes {
+        list-style-type: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+        width: 300px;
+        & li {
+            display: block;
+            cursor: pointer;
+            position: relative;
+            background-color: #EEE;
+            margin: 10px;
+            padding: 15px 5px;
+            height: 40px;
+            border-radius: 4px;
+            .badge {
+                color: white;
+                background-color: #405061;
+                border-radius: 4px 0 0 4px;
+                margin-right: 10px;
+            }
+            &:hover {
+                color: #607D8B;
+                background-color: #DDD;
+                left: .1em;
+            }
+        }
+    }
+    .heroes li.selected {
+        background-color: #CFD8DC;
+        color: rgb(197, 41, 41);
+    }
+}

@@ -4,7 +4,8 @@
         <nav class="nav">
             <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Головна</a>
             <a routerLink="/about" routerLinkActive="active">Про нас</a>
-            <a [routerLink]="['item', '5']" routerLinkActive="active">item 5</a>
+            <a [routerLink]="['item', '5']" [queryParams]="{'product': 'phone', 'price': 200}" routerLinkActive="active">item 5</a>
+            <a [routerLink]="['item', '6']" [queryParams]="{'product': 'table'}" routerLinkActive="active">item 6</a>
             <a routerLink="/not" routerLinkActive="active">Не знайдено</a>
         </nav>
         <router-outlet></router-outlet>

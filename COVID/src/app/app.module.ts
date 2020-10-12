@@ -6,15 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
 import { NotFoundComponent } from './not-found.component';
-
-import { Routes, RouterModule } from '@angular/router';
-
-//Прописування маршрутів
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: '/about', component: AboutComponent },
-  { path: '/**', component: NotFoundComponent }
-]
+import { ItemComponent } from './item.component';
 
 
 @NgModule({
@@ -22,7 +14,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

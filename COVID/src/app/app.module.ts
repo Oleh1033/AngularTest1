@@ -6,10 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
-import { NotFoundComponent } from './not-found.component';
-import { ItemComponent } from './item.component';
-import { ItemDetailsComponent } from './item-details.component';
-import { ItemStatComponent } from './item-stat.component';
+
+
 
 
 
@@ -17,11 +15,7 @@ import { ItemStatComponent } from './item-stat.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    NotFoundComponent,
-    ItemComponent,
-    ItemDetailsComponent,
-    ItemStatComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
